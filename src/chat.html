@@ -20,7 +20,8 @@
       $(function() {     
         var pusher = new Pusher("e21404d54390ab4f02b9")
         var chatWidget = new PusherChatWidget(pusher, {
-          appendTo: "#pusher_chat_widget"
+          appendTo: "#pusher_chat_widget",
+          chatEndPoint: "php/chat.php"
         });
       });
     </script>
